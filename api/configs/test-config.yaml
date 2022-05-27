@@ -1,0 +1,40 @@
+# sandbox keys hardcoded for tests
+port: ${PORT}
+logger: true
+vamaLogger: 
+  type: LOCAL
+errorReporting: false
+gcloud: 
+  project: vama-test
+  redirectBaseURL: "localhost:5001"
+twilio:
+  sid: ${TWILIO_SID}
+  token: ${TWILIO_TOKEN}
+  verify: ${TWILIO_VERIFY}
+stripe:
+  key: sk_test_51K9wqFFFflQeTsOj1ZOerUitCXbZG1yDydXgb8Y47Op0kkOgbNuTiTxjTPI9Z4xDolZoKeFlGyEMWKwsOjpVSkSW00fxTzqG2Z
+  eventSecret: ${STRIPE_EVENT_SECRET}
+sendbird:
+  masterAPIKey: ecb9c65919ca039ffda327a864e3eb12ddcf191e
+  applicationID: 9403A7C5-94F5-4C7F-BF71-BD04DDC494AD
+storage:
+  profileAvatarBucketName: profile-avatars-${GCLOUD_PROJECT}
+  feedPostBucketName: feed-posts-${GCLOUD_PROJECT}
+  themesBucketName: themes-${GCLOUD_PROJECT}
+  chatMediaBucketName: chat-media-${GCLOUD_PROJECT}
+postgre:
+  connectionString: "host=localhost user=postgres password=pass database=postgres-test sslmode=disable"
+redis:
+  addr: todo-fill-in-something?maybe-a-local-redis:9000
+auth:
+  accessTokenKey: ertyuuioalkshndmmdhhgwhjq
+  refreshTokenKey: fjefjakefbkjahbfjakhebfahk
+  goatInviteCodeSecret: ${GOAT_INVITE_CODE_SECRET}
+  payoutSecret: randomPayoutSecretHere
+  dashboardSecret: randomDashboardSecretHere
+vote:
+  upVote: "up"
+  downVote: "down"
+  nil: ""
+sharing:
+  themeSecret: ${THEME_SECRET}

@@ -1,0 +1,49 @@
+port: ${PORT}
+logger: true
+vamaLogger: 
+  type: ${LOGGER_TYPE}
+errorReporting: false
+gcloud:
+  project: ${GCLOUD_PROJECT}
+  apiBaseURL: ${API_BASE_URL}
+  redirectBaseURL: ${REDIRECT_BASE_URL}
+  dynamicLinkBaseURL: ${DYNAMIC_LINK_BASE_URL}
+  appleBundleID: ${APPLE_BUNDLE_ID}
+  serviceAccountEmail: ${SERVICE_ACCOUNT_EMAIL}
+twilio:
+  sid: ${TWILIO_SID}
+  token: ${TWILIO_TOKEN}
+  verify: ${TWILIO_VERIFY}
+stripe:
+  key: ${STRIPE_KEY}
+  eventSecret: ${STRIPE_EVENT_SECRET}
+sendbird:
+  masterAPIKey: ${SENDBIRD_MASTER_API_KEY}
+  applicationID: ${SENDBIRD_APPLICATION_ID}
+storage:
+  profileAvatarBucketName: profile-avatars-${GCLOUD_PROJECT}
+  feedPostBucketName: feed-posts-${GCLOUD_PROJECT}
+  themesBucketName: themes-${GCLOUD_PROJECT}
+  chatMediaBucketName: chat-media-${GCLOUD_PROJECT}
+postgre:
+  connectionString: ${POSTGRE_CONN_STR}
+redis:
+  endpoint: ${REDIS_ENDPOINT}
+  port: ${REDIS_PORT}
+  password: ${REDIS_PASSWORD}
+auth:
+  accessTokenKey: ${ACCESS_TOKEN_KEY}
+  refreshTokenKey: ${REFRESH_TOKEN_KEY}
+  goatInviteCodeSecret: ${GOAT_INVITE_CODE_SECRET}
+  payoutSecret: ${PAYOUT_SECRET}
+  dashboardSecret: ${DASHBOARD_SECRET}
+telegram:
+  apiToken: ${TELEGRAM_HEALTH_CHECKER_API_TOKEN}
+  channelIDs:
+    vamaAlerts: "-700706739"
+vote:
+  upVote: "up"
+  downVote: "down"
+  nil: ""
+sharing:
+  themeSecret: ${THEME_SECRET}
